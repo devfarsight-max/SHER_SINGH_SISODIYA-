@@ -1,0 +1,7 @@
+export default function SectionHeading({ eyebrow, title, text, light = false }) {
+  return <div className="max-w-2xl">
+    <p className={`mb-4 text-xs font-bold uppercase tracking-[0.22em] ${light ? 'text-[#bdd69e]' : 'text-[#557f36]'}`}>{eyebrow}</p>
+    <h2 className={`text-3xl font-semibold leading-tight tracking-[-0.03em] sm:text-4xl lg:text-5xl ${light ? 'text-white' : 'text-[#173326]'}`}>{title}</h2>
+    {text && <p className={`mt-5 text-base leading-7 sm:text-lg ${light ? 'text-white/70' : 'text-[#5e7067]'}`}>{text}</p>}
+  </div>
+}
