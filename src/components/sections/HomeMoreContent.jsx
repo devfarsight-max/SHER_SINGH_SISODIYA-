@@ -32,7 +32,7 @@ export default function HomeMoreContent() {
 
     <section className="px-5 py-24 sm:px-8 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2 lg:items-center lg:gap-20">
-        <Reveal><img src="/images/milk-collection-network.png" alt="Organized raw milk collection and distribution network" loading="lazy" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-xl" /></Reveal>
+        <Reveal><img src="/images/home-collection.png" alt="Organized raw milk collection and distribution network" loading="lazy" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-xl" /></Reveal>
         <div><Reveal><p className="text-xs font-bold uppercase tracking-[.2em] text-[#557f36]">Expansion priorities</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Investing in a stronger operating foundation.</h2><p className="mt-5 leading-8 text-[#5e7067]">The proposed project is focused on practical improvements that strengthen supply capability and support sustainable business growth.</p></Reveal><div className="mt-8 grid gap-4 sm:grid-cols-2">{priorities.map(([title, text], index) => <Reveal key={title} delay={index * .07} className="rounded-2xl border border-[#dfe6dc] bg-white p-5"><h3 className="font-semibold">{title}</h3><p className="mt-2 text-sm leading-6 text-[#5e7067]">{text}</p></Reveal>)}</div></div>
       </div>
     </section>

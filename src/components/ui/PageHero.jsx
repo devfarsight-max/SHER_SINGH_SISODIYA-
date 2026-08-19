@@ -1,9 +1,17 @@
 import { motion } from "framer-motion";
+const heroImages = {
+  "About us": "/images/about-page-hero.png",
+  "What we do": "/images/services-page-hero.png",
+  "Supply network": "/images/supply-page-hero.png",
+  "Quality & commitment": "/images/quality-page-hero.png",
+  "Contact us": "/images/contact-page-hero.png",
+};
+
 export default function PageHero({ eyebrow, title, text }) {
   return (
     <section className="relative overflow-hidden bg-[#173326] px-5 pb-20 pt-40 text-white sm:px-8 lg:pb-24">
       <img
-        src="/images/milk-collection-network.png"
+        src={heroImages[eyebrow]}
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-20"
       />

@@ -19,7 +19,7 @@ export default function SupplyNetworkMoreContent() {
   return <>
     <section className="bg-white px-5 py-24 sm:px-8 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2 lg:items-center lg:gap-20">
-        <Reveal><img src="/images/milk-collection-network.png" alt="Organized milk collection center and refrigerated distribution vehicle" loading="lazy" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-xl" /></Reveal>
+        <Reveal><img src="/images/supply-logistics.png" alt="Organized milk collection center and refrigerated distribution vehicle" loading="lazy" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-xl" /></Reveal>
         <Reveal><p className="text-xs font-bold uppercase tracking-[.2em] text-[#557f36]">Supplier network development</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Reliable supply begins with dependable regional relationships.</h2><p className="mt-5 leading-8 text-[#5e7067]">The enterprise aims to develop a wider network of milk suppliers who can participate in organized procurement and collection activity. Strong relationships improve communication, planning, and confidence throughout the chain.</p><p className="mt-5 leading-8 text-[#5e7067]">Supplier development is approached as a long-term partnership. Clear expectations around location, approximate quantity, collection timing, and handling help create a stronger operating foundation.</p><Link to="/contact" className="btn-primary mt-8 bg-[#173326] text-white hover:bg-[#294c38]">Make a supplier enquiry →</Link></Reveal>
       </div>
     </section>

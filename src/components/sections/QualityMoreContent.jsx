@@ -19,7 +19,7 @@ export default function QualityMoreContent() {
   return <>
     <section className="bg-white px-5 py-24 sm:px-8 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2 lg:items-center lg:gap-20">
-        <Reveal><img src="/images/milk-collection-network.png" alt="Hygienic milk collection and handling operation" loading="lazy" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-xl" /></Reveal>
+        <Reveal><img src="/images/quality-handling.png" alt="Hygienic milk collection and handling operation" loading="lazy" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-xl" /></Reveal>
         <div><Reveal><p className="text-xs font-bold uppercase tracking-[.2em] text-[#557f36]">Freshness in focus</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Protecting a time-sensitive raw material through coordination.</h2><p className="mt-5 leading-8 text-[#5e7067]">Freshness is influenced by every step between the source and the buyer. Thoughtful timing, organized movement, and responsible handling help protect the usefulness of raw milk for commercial customers.</p></Reveal><div className="mt-8 grid gap-4 sm:grid-cols-2">{freshness.map(([title, text], index) => <Reveal key={title} delay={index * .07} className="rounded-2xl bg-[#eef5e5] p-5"><h3 className="font-semibold">{title}</h3><p className="mt-2 text-sm leading-6 text-[#5e7067]">{text}</p></Reveal>)}</div></div>
       </div>
     </section>
