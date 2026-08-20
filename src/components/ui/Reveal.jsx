@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from 'framer-motion'
+﻿import { motion, useReducedMotion } from 'framer-motion'
 
 export default function Reveal({ children, className = '', delay = 0, y = 28 }) {
   const reduced = useReducedMotion()
@@ -9,3 +9,4 @@ export function MotionCard({ children, className = '', delay = 0 }) {
   const reduced = useReducedMotion()
   return <motion.article className={className} initial={reduced ? false : { opacity: 0, y: 24 }} whileInView={reduced ? {} : { opacity: 1, y: 0 }} whileHover={reduced ? {} : { y: -6 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.55, delay }}>{children}</motion.article>
 }
+

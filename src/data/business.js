@@ -1,4 +1,4 @@
-export const navigation = [
+﻿export const navigation = [
   { label: 'Home', to: '/' }, { label: 'About', to: '/about' },
   { label: 'Services', to: '/services' }, { label: 'Supply Network', to: '/supply-network' },
   { label: 'Quality', to: '/quality' }, { label: 'Contact', to: '/contact' },
@@ -16,3 +16,4 @@ export const supplySteps = [
   { step: '04', title: 'Timely distribution', text: 'Coordinated logistics help customers receive supply when they need it.' },
 ]
 export const strengths = ['Consistent quality', 'Dependable supply', 'Customer-first service', 'Scalable network']
+

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import Hero from "../components/sections/Hero";
 import SectionHeading from "../components/ui/SectionHeading";
 import { buyerSegments, strengths } from "../data/business";
@@ -19,7 +19,7 @@ export default function Home() {
               title="Reliable raw milk supply, built for business."
               text="Led by Mr Sher Singh Sisodiya, the enterprise connects hygienic regional procurement with the recurring supply needs of professional buyers."
             />
-            <p className="mt-6 leading-8 text-[#5e7067]">
+            <p className="mt-6 leading-8 text-[#526b5d]">
               We understand that commercial buyers require more than a product.
               They need clear communication, predictable coordination, and a
               supplier who can grow alongside their operations.
@@ -30,9 +30,9 @@ export default function Home() {
               <MotionCard
                 delay={i * 0.08}
                 key={item}
-                className="rounded-2xl border border-[#dfe6dc] bg-white p-5 font-semibold shadow-sm"
+                className="rounded-2xl border border-[#d3e6c5] bg-white p-5 font-semibold shadow-sm"
               >
-                <span className="mb-3 block text-[#69a143]">✓</span>
+                <span className="mb-3 block text-[#659b43]">✓</span>
                 {item}
               </MotionCard>
             ))}
@@ -52,13 +52,13 @@ export default function Home() {
               <MotionCard
                 delay={i * 0.08}
                 key={item.number}
-                className="rounded-3xl bg-[#f2f6ef] p-7"
+                className="rounded-3xl bg-[#eef8e3] p-7"
               >
-                <span className="text-xs font-bold text-[#69a143]">
+                <span className="text-xs font-bold text-[#659b43]">
                   {item.number}
                 </span>
                 <h3 className="mt-10 text-xl font-semibold">{item.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-[#5e7067]">
+                <p className="mt-3 text-sm leading-6 text-[#526b5d]">
                   {item.text}
                 </p>
               </MotionCard>
@@ -67,7 +67,7 @@ export default function Home() {
           <Reveal>
             <Link
               to="/services"
-              className="mt-10 inline-flex rounded-full bg-[#173326] px-6 py-3 text-sm font-bold text-white"
+              className="mt-10 inline-flex rounded-full bg-[#113526] px-6 py-3 text-sm font-bold text-white"
             >
               Explore all services →
             </Link>
@@ -77,7 +77,7 @@ export default function Home() {
       <section className="px-5 py-24 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
           <Reveal>
-            <p className="text-xs font-bold uppercase tracking-[.2em] text-[#557f36]">
+            <p className="text-xs font-bold uppercase tracking-[.2em] text-[#4d7b32]">
               Why businesses choose us
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -102,10 +102,10 @@ export default function Home() {
               <Reveal
                 key={t}
                 delay={i * 0.08}
-                className="border-b border-[#dfe6dc] pb-6"
+                className="border-b border-[#d3e6c5] pb-6"
               >
                 <h3 className="text-xl font-semibold">{t}</h3>
-                <p className="mt-2 leading-7 text-[#5e7067]">{d}</p>
+                <p className="mt-2 leading-7 text-[#526b5d]">{d}</p>
               </Reveal>
             ))}
           </div>
@@ -115,3 +115,5 @@ export default function Home() {
     </>
   );
 }
+
+

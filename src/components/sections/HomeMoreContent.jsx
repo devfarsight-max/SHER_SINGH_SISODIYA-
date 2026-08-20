@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import Reveal, { MotionCard } from '../ui/Reveal'
 
 const process = [
@@ -23,29 +23,31 @@ const questions = [
 
 export default function HomeMoreContent() {
   return <>
-    <section className="bg-[#173326] px-5 py-24 text-white sm:px-8 lg:py-32">
+    <section className="bg-[#113526] px-5 py-24 text-white sm:px-8 lg:py-32">
       <div className="mx-auto max-w-7xl">
-        <Reveal className="grid gap-8 lg:grid-cols-2 lg:items-end"><div><p className="text-xs font-bold uppercase tracking-[.2em] text-[#bdd69e]">How we work</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">A clear path from requirement to reliable supply.</h2></div><p className="max-w-xl leading-8 text-white/65">Our approach brings together procurement planning, collection coordination, careful handling, and responsive distribution.</p></Reveal>
-        <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-4">{process.map(([number, title, text], index) => <MotionCard key={number} delay={index * .08} className="rounded-3xl border border-white/15 bg-white/5 p-7"><span className="grid size-11 place-items-center rounded-full bg-[#d8efb9] text-sm font-bold text-[#173326]">{number}</span><h3 className="mt-9 text-xl font-semibold">{title}</h3><p className="mt-3 text-sm leading-7 text-white/60">{text}</p></MotionCard>)}</div>
+        <Reveal className="grid gap-8 lg:grid-cols-2 lg:items-end"><div><p className="text-xs font-bold uppercase tracking-[.2em] text-[#c7e7a1]">How we work</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">A clear path from requirement to reliable supply.</h2></div><p className="max-w-xl leading-8 text-white/65">Our approach brings together procurement planning, collection coordination, careful handling, and responsive distribution.</p></Reveal>
+        <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-4">{process.map(([number, title, text], index) => <MotionCard key={number} delay={index * .08} className="rounded-3xl border border-white/15 bg-white/5 p-7"><span className="grid size-11 place-items-center rounded-full bg-[#d7f1b1] text-sm font-bold text-[#113526]">{number}</span><h3 className="mt-9 text-xl font-semibold">{title}</h3><p className="mt-3 text-sm leading-7 text-white/60">{text}</p></MotionCard>)}</div>
       </div>
     </section>
 
     <section className="px-5 py-24 sm:px-8 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2 lg:items-center lg:gap-20">
         <Reveal><img src="/images/home-collection.png" alt="Organized raw milk collection and distribution network" loading="lazy" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-xl" /></Reveal>
-        <div><Reveal><p className="text-xs font-bold uppercase tracking-[.2em] text-[#557f36]">Expansion priorities</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Investing in a stronger operating foundation.</h2><p className="mt-5 leading-8 text-[#5e7067]">The proposed project is focused on practical improvements that strengthen supply capability and support sustainable business growth.</p></Reveal><div className="mt-8 grid gap-4 sm:grid-cols-2">{priorities.map(([title, text], index) => <Reveal key={title} delay={index * .07} className="rounded-2xl border border-[#dfe6dc] bg-white p-5"><h3 className="font-semibold">{title}</h3><p className="mt-2 text-sm leading-6 text-[#5e7067]">{text}</p></Reveal>)}</div></div>
+        <div><Reveal><p className="text-xs font-bold uppercase tracking-[.2em] text-[#4d7b32]">Expansion priorities</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Investing in a stronger operating foundation.</h2><p className="mt-5 leading-8 text-[#526b5d]">The proposed project is focused on practical improvements that strengthen supply capability and support sustainable business growth.</p></Reveal><div className="mt-8 grid gap-4 sm:grid-cols-2">{priorities.map(([title, text], index) => <Reveal key={title} delay={index * .07} className="rounded-2xl border border-[#d3e6c5] bg-white p-5"><h3 className="font-semibold">{title}</h3><p className="mt-2 text-sm leading-6 text-[#526b5d]">{text}</p></Reveal>)}</div></div>
       </div>
     </section>
 
     <section className="bg-white px-5 py-24 sm:px-8 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr] lg:gap-24">
-        <Reveal><p className="text-xs font-bold uppercase tracking-[.2em] text-[#557f36]">Business value</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Designed around the realities of commercial buyers.</h2><p className="mt-5 leading-8 text-[#5e7067]">Raw milk is an essential and time-sensitive input. We focus on the operating qualities that make a supply relationship useful over the long term.</p><Link to="/quality" className="btn-primary mt-8 bg-[#173326] text-white hover:bg-[#294c38]">Our quality commitment →</Link></Reveal>
-        <div className="grid gap-5 sm:grid-cols-2">{[['Supply confidence','Organized planning supports recurring commercial requirements.'],['Direct communication','Buyers can discuss needs without unnecessary layers or complexity.'],['Regional understanding','Local market knowledge supports sourcing and movement decisions.'],['Growth readiness','The network is being strengthened to serve expanding demand.']].map(([title, text], index) => <MotionCard key={title} delay={index * .08} className="rounded-3xl bg-[#eef5e5] p-7"><span className="text-xl text-[#69a143]">◆</span><h3 className="mt-7 text-xl font-semibold">{title}</h3><p className="mt-3 leading-7 text-[#5e7067]">{text}</p></MotionCard>)}</div>
+        <Reveal><p className="text-xs font-bold uppercase tracking-[.2em] text-[#4d7b32]">Business value</p><h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Designed around the realities of commercial buyers.</h2><p className="mt-5 leading-8 text-[#526b5d]">Raw milk is an essential and time-sensitive input. We focus on the operating qualities that make a supply relationship useful over the long term.</p><Link to="/quality" className="btn-primary mt-8 bg-[#113526] text-white hover:bg-[#24523d]">Our quality commitment →</Link></Reveal>
+        <div className="grid gap-5 sm:grid-cols-2">{[['Supply confidence','Organized planning supports recurring commercial requirements.'],['Direct communication','Buyers can discuss needs without unnecessary layers or complexity.'],['Regional understanding','Local market knowledge supports sourcing and movement decisions.'],['Growth readiness','The network is being strengthened to serve expanding demand.']].map(([title, text], index) => <MotionCard key={title} delay={index * .08} className="rounded-3xl bg-[#edf8df] p-7"><span className="text-xl text-[#659b43]">◆</span><h3 className="mt-7 text-xl font-semibold">{title}</h3><p className="mt-3 leading-7 text-[#526b5d]">{text}</p></MotionCard>)}</div>
       </div>
     </section>
 
     <section className="px-5 py-24 sm:px-8">
-      <div className="mx-auto max-w-4xl"><Reveal className="text-center"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#557f36]">Common questions</p><h2 className="mt-4 text-3xl font-semibold sm:text-4xl">Planning to work with us?</h2></Reveal><div className="mt-10 space-y-4">{questions.map(([question, answer], index) => <Reveal key={question} delay={index * .08} className="rounded-2xl border border-[#dfe6dc] bg-white p-6 sm:p-7"><h3 className="text-lg font-semibold">{question}</h3><p className="mt-3 leading-7 text-[#5e7067]">{answer}</p></Reveal>)}</div><Reveal className="mt-10 text-center"><Link to="/contact" className="btn-primary bg-[#173326] text-white hover:bg-[#294c38]">Discuss your requirement →</Link></Reveal></div>
+      <div className="mx-auto max-w-4xl"><Reveal className="text-center"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#4d7b32]">Common questions</p><h2 className="mt-4 text-3xl font-semibold sm:text-4xl">Planning to work with us?</h2></Reveal><div className="mt-10 space-y-4">{questions.map(([question, answer], index) => <Reveal key={question} delay={index * .08} className="rounded-2xl border border-[#d3e6c5] bg-white p-6 sm:p-7"><h3 className="text-lg font-semibold">{question}</h3><p className="mt-3 leading-7 text-[#526b5d]">{answer}</p></Reveal>)}</div><Reveal className="mt-10 text-center"><Link to="/contact" className="btn-primary bg-[#113526] text-white hover:bg-[#24523d]">Discuss your requirement →</Link></Reveal></div>
     </section>
   </>
 }
+
+

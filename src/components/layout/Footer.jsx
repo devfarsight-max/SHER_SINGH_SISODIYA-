@@ -1,19 +1,20 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { navigation } from "../../data/business";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#11271c] px-5 pb-8 pt-16 text-white sm:px-8">
+    <footer className="bg-[#678458] px-5 pb-8 pt-16 text-white sm:px-8">
       <div className="mx-auto grid max-w-7xl gap-12 border-b border-white/10 pb-14 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <Link to="/" className="flex items-center gap-3">
-            <span className="grid size-11 place-items-center rounded-full bg-[#d8efb9] text-sm font-bold text-[#173326]">
-              SS
+            <span className="grid size-14 place-items-center rounded-2xl bg-[#678458] p-1">
+              <img src="/logo-mark.svg" alt="" className="h-full w-full object-contain drop-shadow-[0_2px_3px_rgba(17,53,38,.22)]" />
             </span>
             <strong className="leading-tight">
               SHER SINGH
               <br />
               SISODIYA
+              <span className="mt-1 block text-[9px] font-medium tracking-[.3em] text-[#d7f1b1]">ENTERPRISE</span>
             </strong>
           </Link>
           <p className="mt-5 max-w-sm text-sm leading-7 text-white/55">
@@ -22,7 +23,7 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-[#bdd69e]">
+          <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-[#c7e7a1]">
             Explore
           </h3>
           <div className="mt-5 grid gap-3">
@@ -38,7 +39,7 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-[#bdd69e]">
+          <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-[#c7e7a1]">
             Business
           </h3>
           <div className="mt-5 grid gap-3">
@@ -54,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-[#bdd69e]">
+          <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-[#c7e7a1]">
             Connect
           </h3>
           <p className="mt-5 text-sm leading-7 text-white/60">
@@ -62,7 +63,7 @@ export default function Footer() {
           </p>
           <a
             href="mailto:info@shersinghsisodiya.com"
-            className="mt-3 block break-all text-sm text-white hover:text-[#d8efb9]"
+            className="mt-3 block break-all text-sm text-white hover:text-[#d7f1b1]"
           >
             info@shersinghsisodiya.com
           </a>
@@ -77,3 +78,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+
