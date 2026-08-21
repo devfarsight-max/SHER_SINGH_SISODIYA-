@@ -1,5 +1,5 @@
 ﻿import { useEffect, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Link, NavLink } from 'react-router-dom'
 import { navigation } from '../../data/business'
 
@@ -30,7 +30,7 @@ export default function Header() {
       <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary navigation">{navigation.map((item) => <NavLink key={item.to} to={item.to} className={navClass}>{item.label}</NavLink>)}</nav>
       <button onClick={() => setOpen(!open)} className="grid size-11 place-items-center rounded-full border border-white/30 lg:hidden" aria-label="Toggle navigation" aria-expanded={open}><span className="text-2xl leading-none">{open ? '×' : '≡'}</span></button>
     </div>
-    <AnimatePresence>{open && <motion.nav initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} className="border-t border-white/15 bg-[#113526] px-5 pb-6 pt-3 shadow-xl lg:hidden">{navigation.map((item) => <NavLink key={item.to} to={item.to} onClick={() => setOpen(false)} className={({ isActive }) => `block border-b border-white/10 py-3 text-sm ${isActive ? 'text-[#d7f1b1]' : 'text-white/80'}`}>{item.label}</NavLink>)}</motion.nav>}</AnimatePresence>
+    {open && <motion.nav initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.18 }} className="border-t border-white/15 bg-[#113526] px-5 pb-6 pt-3 shadow-xl lg:hidden">{navigation.map((item) => <NavLink key={item.to} to={item.to} onClick={() => setOpen(false)} className={({ isActive }) => `block border-b border-white/10 py-3 text-sm ${isActive ? 'text-[#d7f1b1]' : 'text-white/80'}`}>{item.label}</NavLink>)}</motion.nav>}
   </motion.header>
 }
 
