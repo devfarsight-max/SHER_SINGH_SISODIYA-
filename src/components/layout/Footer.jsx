@@ -62,11 +62,17 @@ export default function Footer() {
             For supply requirements and business partnerships:
           </p>
           <a
-            href="mailto:info@shersinghsisodiya.com"
+            href="mailto:ssisodiya380@gmail.com"
             className="mt-3 block break-all text-sm text-white hover:text-[#d7f1b1]"
           >
-            info@shersinghsisodiya.com
+            ssisodiya380@gmail.com
           </a>
+          <a href="tel:+917983529701" className="mt-2 block text-sm text-white/60 hover:text-white">
+            +91 79835 29701
+          </a>
+          <address className="mt-2 text-sm not-italic leading-6 text-white/60">
+            Vinoba Nagar, Sadabad, Hathras
+          </address>
         </div>
       </div>
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 pt-7 text-xs text-white/40 sm:flex-row">
